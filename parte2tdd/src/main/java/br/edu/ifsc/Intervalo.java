@@ -1,11 +1,13 @@
 package br.edu.ifsc;
 
 public class Intervalo {
-    public Intervalo(int horas, int minutos, int segundos) {
+    private final int horas;
 
+    public Intervalo(int horas, int minutos, int segundos) {
+        this.horas = horas;
     }
 
     public int horas() {
-        return 0;
+        return this.horas;
     }
 }
